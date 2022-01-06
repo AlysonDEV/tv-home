@@ -1,1 +1,7 @@
+#Filmes
 assets/movies/
+
+#Posters movies
+assets/*.jpeg
+assets/*.jpg
+assets/*.png
