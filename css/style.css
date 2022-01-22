@@ -10,15 +10,43 @@ body {
 .titulo {
 	text-align: center;
 }
+.logonome{
+	font-family: 'Bebas Neue', cursive;
+	color:re
+}
 .filmes {
-	display: flex;
-	flex-direction: row;
-	flex: 0 0 33.333333%;
-	justify-content: space-between;
+	display: grid;
+	grid-gap: 1px;
+	grid-template-columns: repeat(3, 1fr);
+	/*flex-direction: row;*/
+	/*flex: 0 0 33.333333%;*/
+	/*justify-content: space-between;*/
 }
 .capa{
-	background: rgba(255,255,255,0.8);
+	margin: 0.8rem;
+	text-align: center;
+	background: rgba(255,255,255,0.6);
+	padding: 0.1rem;
+	transition: transform .5s;
+	border-radius: 20px;
 }
 .capa:hover{
+	transform: scale(1.1);
+}
+.capa a{
+	text-decoration: none;
+}
+img{
+	margin-top: 0.4rem;
 	border-radius: 20px;
+	height: 200px;
+	width: 90%;
+	object-fit: cover;
+	object-position: 50% 90%;
+	box-shadow:0 4px 3px #585745;
+	transition:  box-shadow 0.5s;
+}
+img:hover{
+	top: 4px;
+	box-shadow:0 4px 3px #000;
 }

@@ -16,16 +16,22 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
   } else if ($filme == "eternos"){
     ?>
       <video id="video2" width="600" height="300" poster="../assets/eternos.jpg" controls>
-        <source src="../assets/movies/Eternals.2021.HDCAM.2021.720p-FuckAds/Eternals.2021.HDCAM.2021.720p-FuckAds.mkv" type="video/mp4">
-        <track kind="subtitles" src="../assets/movies/Eternals.2021.HDCAM.2021.720p-FuckAds/Eternals.2021.HDCAM.2021.720p-FuckAds.vtt" srclang="pt-br" label="Português">
+        <source src="../assets/movies/Eternals.2021.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP/Eternals.2021.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP.mkv" type="video/mp4">
+        <track kind="subtitles" src="../assets/movies/Eternals.2021.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP/Eternals.2021.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP.vtt" srclang="pt-br" label="Português">
       Your browser does not support the video tag.
       </video>
     <?php
-  }
+  } else if ($filme == "the-darkest-minds"){
+    ?>
+      <video id="video2" width="600" height="300" poster="../assets/The Darkest Minds.jpg" controls>
+        <source src="../assets/movies/The.Darkest.Minds.2018.1080p.BluRay.H264.AAC-RARBG/The.Darkest.Minds.2018.1080p.BluRay.H264.AAC-RARBG.mp4" type="video/mp4">
+        <track kind="subtitles" src="../assets/movies/The.Darkest.Minds.2018.1080p.BluRay.H264.AAC-RARBG/The.Darkest.Minds.2018.1080p.BluRay.H264.AAC-RARBG.vtt" srclang="pt-br" label="Português">
+      Your browser does not support the video tag.
+      </video>
+
+    <?php
+  } 
 }
 ?> 
-<video width="50%" controls crossorigin="anonymous">
-  <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-  <track kind="subtitles" src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" srclang="en" label="Inglês" default>
-  <track kind="subtitles" src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" srclang="pt" label="Português">     
-</video>
+<br><button onClick="obterDuracao('horas', true)">Obter Duração</button>  
+<div id="infoplayer"></div> 
